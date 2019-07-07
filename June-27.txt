@@ -1,0 +1,66 @@
+June 27
+
+---- Missed many slides(15 mins) ----
+
+Terminology: 
+	Requirements are statements of desire properties
+	- Desired changes to the world
+	- Expressed in the absence of any system 
+	- ,,,
+
+	Specification:
+	- ...
+
+Requirements are an idealized description of the desired behavior. When we write the spec we have to start asking how the system will realize..
+
+Normally, we cannot build a system that by itself will satisfy the requirements. Sometimes we have to make assumptions about the environment in which the system operates.
+	- Facebook: Requirement: Want to keep up to date with our friends.
+				Assumption: Friends are on FB and post regularly.
+
+We want to show specs imply the reqs. Often we cannot do so without making some assumptions about the environment
+
+Fundamental law of requirements **
+
+Reqs: written in terms of what people need, no mention of software solution.
+Specs: we've decided there will be a software solution. Need to delegate what the system will do vs the env
+
+Park user Fees example:
+	Reqs:	1) Collect $1 fee from each user on entry
+			2) Ensure that anyone who has paid may enter the park
+			3) Ensure that no one may enter park without paying
+	Interfaces for these:
+			1) Coin slots
+			2) Gate/Turnstile
+			3) Gate/Turnstile
+	Specifications:
+			1) Coin inserted in the slot (env) -- Sense the coin (sys)
+			2) User pushes the gate (env) -- Unlock gate after coin inserted (sys)
+			3) No env spec necessary -- lock the door again (sys)
+	Assumptions:
+			1) Coin of $1 is inserted
+			2) Users that pushed the gate entered
+            3) The person that paid is the same person that entered
+
+^ We just derived specifications from the requirements. For this you may need to introduce interface from the outside system.
+
+Thermostat Example:
+   Reqs: Want to keep the air temperature at or above the user-desired temp
+   Interface: Thermostat controller to enter a value (?)
+   Specification: If TEMP < SET_TEMP ---> Turn ON  / if TEMP > SET_TEMP ---> TURN OFF
+
+Traffic Light example
+    Reqs: Allow car traffic to cross an intersection safely, without colliding with traffic traveling in other directions
+    Interface: Traffic lights
+    Specification: Only one light at a time is on
+
+Elevator example
+    Reqs: Passenger is transported from her current floor to her desired floor
+    Relevant phenomena: User request to go to a floor
+    Interface: Elevator itself && Elevator buttons
+    Assumptions: You press a lower button than your level you go down and vice versa. && Who enters is a person && They leave after reaching their desired floor
+
+Similar but distinct classes
+Phone company example:
+    4 classes: Customer, Service, Service OPT, Service Usage
+
+Address example: Should've been 1 class with multiple attributes (City, Street ...)

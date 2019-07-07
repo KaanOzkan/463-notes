@@ -1,0 +1,18 @@
+Hypothesis testing
+
+Hypotheses are testable and falsifiable.
+
+Falsifiable: Can be clearly proven wrong. Don't keep them vague ( < 2ms)
+
+Includes a problem interview with a stakeholder/customer.
+    - Get demographics
+    - Make them rank problems
+    - Explore their worldview (How do they address those problems right now)
+
+Done when:
+    - Can identify the demographics of an early adopter
+    - Have a must-have problem
+    - Can describe how customers solve this problem today
+
+
+ 

@@ -1,0 +1,15 @@
+Stakeholders
+
+Ultimate stakeholder: Owner/Client, person paying for the software to be developed
+
+Customer: Person who buys the software after it's developed
+
+Users: Use the software, Experts on the work being performed, existing system and competitors' product.
+
+Negative stakeholder: You can understand why they do not want the project to succeed.
+
+Personas are user archetypes. Useful when real users are not available.
+
+You can find personas through interviewing real users or market research.
+
+Deliverable #2

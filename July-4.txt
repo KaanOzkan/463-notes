@@ -1,0 +1,47 @@
+A business rule is a rule or assertion that defines or constraints some aspect of the Work being investigated
+
+Examples
+    - Rental agreements must be no longer than 4 weeks long
+    - Customer must be at least 25 years old
+
+Facts: obvs
+Constraints: restricts the actions that the system or its users can perform
+Action enabler: Rule that triggers some activity if specific conditions are true
+Inference: Creates a new fact from other facts. Often written in the "if/then" pattern, also found in action enabler
+Computations: Transform existing data into new data by maths
+
+OCL: Object constraint language. Complements UML
+     - Look at the slides
+        .
+        .
+        .
+        Navigation Across Associations: 
+            - p returns object of type person
+            - p.RentalAgreement returns a set of RAs
+            - p.RentalAgreement.car is buggy since we had a set of Agreements
+
+-> operator means we are doing this operation on the set. Use "." for evrything else
+Example:
+    - Rental car companies never own red cars:
+        context RentalCarCompany inv:
+        self.owns.colour-> excludes(red) // not self.Vehicle but self.owns 
+    - Frequent renters (# rentals > 20) receive 10% discount
+        context RentalAgreement inv:
+        (self.customer.RentalAgreement-> select(startdate < self.startdate)->size() > 20) implies
+            self.discount = 10
+    - Heavy spenders (rental > $5000) receive 20% discount
+        context RentalAgreement inv:
+        self.price > 5000 implies self.discount = 20
+
+Filtering Operations: operations extracting specific elements from an existing collection
+    - select & return
+    - Example: Customers younger than 30 cannot rent red cars
+        context Person inv:
+        self.age < 30 implies self.RentalAgreement.rented_car->select(colour="red")...
+
+More examples:
+    - Rental car fleet contains at least one Toyota
+        context RentalCarCompany invL:
+        self.owns->exists(manuf=Toyota)
+
+Cannot recover from a Broken rule, not true anymore
