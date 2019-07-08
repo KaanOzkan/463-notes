@@ -1,0 +1,20 @@
+User Requirements
+
+Decompose software into use cases
+
+Primary actors - Scope of the system - Supporting actors
+
+Context diagrams
+
+User stories (As a X I want Y so that Z)
+
+Summary:
+
+- Use cases: decompose the work into work-pieces to manage complexity
+- Use Case diagram: expresses use cases in a manner that is easy for all stakeholders to visualize
+- Context Diagrams: Shows information flow between the solution and external entities
+- User stories: Express user requirements from the perspective of the user and their motivations
+
+
+Deliverable #3
+

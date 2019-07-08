@@ -1,0 +1,38 @@
+Elicitation (I think it's like learning in general))
+
+4 types
+    - Artifact based
+    - Stakeholder based
+    - Model based
+    - Creativity based
+
+Artifact:
+    Learn as much as we can by studying documentation, before asking for stakeholders' time.
+    - Documents, documentation about existing requirements, design docs,
+      bug reports. Business plans, financial  reports
+
+    - Norms: Build a better X
+    - Requirements taxonomy
+
+Stakeholder:
+    Acquire detailed info about the system to-be that is problem specific or stakeholder specific.
+    - Interviews, ask open questions, learn stakeholder specific problems
+    - Group Interviews, interview different stakeholders together to get diversity of views. Can reveal conflicts.
+    - Questionnaires
+    - Apprenticeship
+
+Model:
+    Express requirements in a different language
+    - Good models keep it simple, restrict amount of details.
+    - Mockups and prototypes
+    - Sketching the essence can help stakeholders provide new requirements
+
+Creativity:
+    Invent undreamed of requirements that bring about innovative change and gives competitive advantage.
+    - Systemic thinking
+    - Brainstorming
+        - Generate Ideas, as many as possible
+        - Go over the list and explain ideas more carefully
+        - Rank n choose winners
+        - Analogical reasoning (exploring analogies to a related problem)
+

@@ -1,0 +1,27 @@
+Prioritizing Requirements
+
+- There are more requirements than can be implemented
+- Need to balance reqs against limitations in budget, staff, schedule
+
+Criteria
+    - Business value added
+    - Penalty/Harm avoided
+    - Risk
+    - Cost
+    - Time
+
+How to rank?
+    - 100 Dollar test
+    - Kano Model
+    - Kano surveys, ask about their reaction if req were included. Or if Req was not included
+    - This 2 are what Essa's team did for peer task.
+
+Better to combine results of multiple surveys and use averages and standard deviations
+
+Analytic Hierarchy Process (AHP)
+    - This is what I did for the assignment
+    - Compare pairs of reqs
+    - 1, 3, 5, 7, 9
+    - Normalize values and check against a random matrix
+
+Deliverable #6

@@ -1,0 +1,30 @@
+Prototyping
+
+Throwaway prototyping
+    - Learn more about the problem
+    - discard after knowledge is gained
+    - Use early
+    - Build only one layer eg UI
+    - Early feedback, less cost
+    - Disadvantage: often replaces proper documentation of the specification
+
+Evolutionary Prototyping
+    - Learn more about the solution
+    - Reduce risk by building parts early
+    - Use incremental; evolutionary
+    - More vertical, partial implementation of all layers
+    - Design to be extended and adapted
+    - Return to last version if problem encountered
+    - Disadvantages: Early architectural choice might be poor, can end up with complex, unstructured system that is difficult to maintain. Lacks control and direction
+
+Sketches: UI that focuses on the content, what to include, how to lay it out
+
+Wire framing: Mock up of a user interface, using simple shapes.
+
+Summary:
+    - Spring prototypes enable fast learning about some aspect of a proposed solution
+    - Prototypes generally used to elicit requirements in the form of feedback on the value of proposed solutions
+    - Sketching enables rapid generation of alternative UI designs
+
+Deliverable #5
+

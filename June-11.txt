@@ -1,0 +1,19 @@
+Domain models
+
+Domain model is a model of operating environment of the work under study
+    - Real word entities, relationships among entities
+
+UML class diagrams express domain models
+    - class name
+    - Attributes
+    - associations
+
+UML summary in slides **
+
+Domain models should have
+    - Attributes
+    - Multiplicities including 1
+    - Association names for non trivial assoc
+    - Qualifiers
+    - Actors, stick figures
+

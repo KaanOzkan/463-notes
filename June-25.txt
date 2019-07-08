@@ -1,0 +1,8 @@
+Risk Management
+
+Risk is an uncertain factor whose occurrence may result in some loss of satisfaction of some objective
+
+- Product related risks
+- Process related risks
+
+....

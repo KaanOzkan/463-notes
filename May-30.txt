@@ -1,0 +1,16 @@
+Workflow models
+
+Workflow is a series of tasks to accomplish a business use case
+
+Scenario is one full execution path through a use case, listing observable actions
+
+Alternative use case: a sub use case that achieved the goal through different "intended" actions (Cached response)
+
+Exception: sub use case that captures an unwanted but possible deviation
+
+Activity Diagram: UML model expressing the flow of control
+
+Dataflow Diagram (DFD) functional decomposition of the work, and the data dependencies between functions
+
+Deliverable #2
+

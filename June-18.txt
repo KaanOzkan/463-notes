@@ -1,0 +1,27 @@
+Quality Requirements
+
+Functional Requirements:
+    - What the software is supposed to do
+
+Quality requirements:
+    - Extra constrains on what constitutes as an acceptable software solution
+    - Eg. How fast a system should respond, how secure
+    - I guess this is like non functional requirements
+
+Motherhood requirements:
+    - reliable 
+    - user-friendly
+    - maintainable
+
+Fit criterion:
+    - Extent to which a quality requirement must be met
+    - Usually statistical, 99% uptime
+
+Monte Carlo techniques:
+    - Estimate unknown quantity using a known quantity
+    - Useful for cases when you can't test before delivery
+    - Or for stuff you can't actually measure (no of bugs in a program)
+
+Quality requirements may conflict with functional requirements
+
+

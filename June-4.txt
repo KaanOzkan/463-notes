@@ -1,0 +1,30 @@
+MVP - Hypothesis testing
+
+Final part of the Problem/Solution Fit:
+    - Document Plan
+    - Get ready to interview customers
+    - Problem interview
+    - Solution interview
+
+Customer risk: 
+    - Who are early adopters 
+    - How will you reach them
+
+Product risk: 
+    - Does your proposed solution and UVP align with customers no1 problem
+    - What is the minimum feature set needed to launch
+
+Solution Interview:
+    - Welcome
+    - Demographics
+    - Tell story (Illustrate top problems you are tackling)
+    - Demo (Go through each problem in turn and illustrate how you solve it)
+    - Document Results (confirm or pivot from initial hypothesis)
+
+Ensure UVP provides significant value
+Ensure MVP delivers your UVP
+
+Deliverable #3
+
+
+
