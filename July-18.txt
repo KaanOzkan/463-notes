@@ -1,0 +1,146 @@
+Temporal Logic
+
+** Prescriptive vs Descriptive Specifications
+
+Refresher: Constraints
+
+Temporal Constraints
+    - Assert mathematical statements about temporally changing variables.
+    - Temporally changing means "as the system executes"
+
+Examples
+    - Telephony
+    - Elevator
+
+Useful constraints
+
+Review: Predicate Logic
+    - Categorical vs Propositional was before
+    - now mostly used logic is Predicate and it includes both of them
+
+Examples
+    - Every student who has money goes to the movies
+        ∀s ⊂ Student : money(s) -> movies(s)   😍
+        ∀s ⊂ Student.money(s) -> movies(s)
+    - Some student has money and goes to movies
+        ∃s ⊂ Student : money(s) && movies(s)
+        ∃s ⊂ Student.money(s) && movies(s)
+
+Executions
+    - As system executes, value of the variables change
+
+State Formula
+    - Intuitively a state of execution is the values of variables at a snapshot in time
+    - State formula is a predicate-logic property that is evaluated with respect to a particular execution state
+
+
+Timed Logics
+
+Explicit Time
+    - Each execution state is associated with a point in time, at which the system's variables have particular values
+
+
+Turnstile example
+    1. It’s always the case that the number of entries into the park is less than or equal to the number of coins received.
+        - ∀t ∈ Time : (# entries(t) <= # coins(t))
+
+    2. It’s always the case that if a visitor pushes the turnstile and the turnstile is unlocked, then eventually the visitor will enter the park.
+        - ∀t ∈ Time : (( push(t) && !lock(t))) -> ∃t1 ∈ Time : (t1 > t && enter(t1))
+
+    3. It’s always the case that if a visitor pushes the turnstile when the turnstile is unlocked then the turnstile rotates until the visitor enters the park.
+        - This one is a yikesss, took a pic
+
+Explicit vs Implicit Time
+    - Sometimes we care about precise timing of events.
+    - Real time constraints
+    Train example:
+    -  methods: Train.location(t), Crossing.location(t), distance(location, location) : length
+    -  ∀t : Time . [distance(Train.location(t), Crossing.location(t) <= 200m)] => [Gate(t+10s) = closed]
+
+
+    - Often we are not interested in describing the precise times but rather with the temporal order in which events occur.
+
+Linear Temporal Logic (LTL)
+
+LTL Semantics
+    - Same table as before, but we don't care about the time.
+    - We describe the truth or falsity of an LTL formula (property) with respect to a state in an execution
+    - |= means like "holds". (f holds given Sj)
+    
+Notes:
+    - You can think about State machines as linear time
+    - Diagram that is "opening up" and displaying the path A -> C -> B -> C...
+
+Temporal Connectives
+
+Notes:
+    - Took pic
+
+Henceforth
+    - No idea what's going on bc Karan talked too much
+
+Example
+    - It’s always the case that the number of entries into the park is less than or equal to the number of coins received
+    - |= square (numEntries <= numCoins) // Square is Henceforth
+
+Eventually
+    - Rhombus
+
+Example
+    - Whenever a visitor pushes the turnstile and the turnstile is unlocked, then eventually the visitor will enter the park.
+    -  |= square ((push && !lock) -> rhombus enter)
+
+Examples
+    - rhombus(square f) ≣ Eventually f will be always True(?)
+    - square(rhombus f) ≣ f happens indefinitely often
+    - ≣ should be equivalent sign (with 3 dashes)
+
+Next
+    - Circle
+
+Example:
+    - Whenever a coin is inserted, in the next state the turnstile is unlocked
+    - |= square (coin -> circle !locked)
+
+Until
+    - U, but like fancy
+
+Example
+    - Henceforth, if the barrier is pushed when the barrier is unlocked, then in the next state the barrier will be rotating until the visitor has entered.
+    - |= square((push && !locked) -> circle(rotating U enter)) // U = until
+
+Unless  
+    - W
+    - Until is often used to describe some (temporarily) constant system property that holds until some (future) system event
+    - Unless is used to describe some (temporarily) constant system property that holds until some (future) environmental event
+    - Example: Henceforth, if the turnstile is locked, then it will stay locked unless a coin is entered.
+
+Elevator Example
+    - The elevator shall never move with its doors open
+        - |= square(moving -> (door = closed))
+    - The elevator shall not keep its doors open indefinitely
+        - |= square (door=open -> rhombus door = closed)
+        - Or this way:
+        - |= square rhombus (door = closed)
+    - The elevator does not move before a request is made
+        - |= !moving W (∃i : 1..5 . req[i])
+
+LTL Tautologies
+
+LTL and Finite State Machines
+    True or False?
+    - True (When we start we'll always eventually end at rotating)
+    - True
+    - False
+    
+    - Next slide is ALL true
+
+Model Checking
+
+Summary
+    - A descriptive specification notation for describing constraints on the behaviour of the system
+
+Deliverable #9
+😔
+
+

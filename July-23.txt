@@ -1,0 +1,146 @@
+Cost Estimations
+
+Example from Canadian Automated Air traffic Control System (CAATS)
+
+CAATS Timeline
+
+    Project Completed 64 months later than originally planned
+    Cost of > 123$ million more than originally planned
+    They got investigated due to much higher cost than estimated
+
+Why Estimate Software cost and effort?
+    Economic feasibility means client is willing to pay the cost and the devs are willing to devote resources to the project
+    1. Estimate developer effort
+    2. Estimate cost of the project
+    
+Terminology
+    Estimate is a prediction of how long a project will take or how much it will cost
+    A target is a statement of a desirable business objective.
+    Commitment is a promise to deliver.
+
+Estimates Targets, Commitments
+    Estimates and targets are related. Estimations are used to establish targets. Estimation should be treated as unbiased, analytical process. Targets are biased and goal-seeking process.
+
+Inaccurate Estimates
+    "An estimate is the most optimistic prediction that has a non-zero probability of coming true. Accepting this definition leads irrevocably toward a method called what’s-the-earliest-date-by-which- you-can’t-prove-you-won’t-be-finished estimating."
+    Pricing to win means bidding as low as possible to beat the competition and win the contract
+        https://richterandcompany.com/what-is-price-to-win/ (my link not profs)
+
+Effects of Inaccurate Estimates
+    Look at the nice graph
+    Parkinson's Law
+
+Inaccurate estimates' disadvantages
+    - Overestimation: Parkinson's Law. Managers worry about possible padding in devs estimates
+    - Underestimation: Increased risk of planning errors, project errors, being off schedules. More planning because we are off schedules
+
+    Low estimates undermined effective planning by feeding bad assumptions into plans for specific activities. Can cause planning errors in team size, coordination among group.
+    If the estimation errors are off by 5-10% then those errors won't cause significant problems (Apparently)
+
+    Statistically reduced chance of on-time completion. 
+    Poor technical foundation leads to worse than nominal results.(Low estimate can cause less design/architect time at the start and cause more errors.)
+
+Industry's Track Record
+    2 graphs on % of Failed/Over Budget/On budget projects
+
+    Smaller the team and shorter duration of the project the grater the success rate (From a table she had)
+
+What is a Good Estimate?
+    A project is successful if it is delivered on time, within budget, with acceptable functionality.
+
+Sources of Estimation Error
+
+Sources of Estimation Error
+    - Optimism: 
+        20-30% optimism factor on developer estimates. Managers believe projects can be completed 30% faster than previous projects.
+    - Bias
+    - Subjectivity
+
+    How to mitigate?
+        Re-estimate repeated throughout the project
+        Checklists of frequently omitted errors
+        ... She s too fast I cant keep up :(
+
+Estimation Error
+    - Uncertainty about how numerous requirements details and design decisions will be made.
+    - Estimation accuracy improves rapidly for the first 30% of the project.
+
+Biggest Influences on Estimates
+    - Project size
+        Largest factor. Diseconomies of scale
+    - Kind of Software
+        Business apps, embedded systems, real time
+    - Personnel Factors
+        Productivity of individuals can vary by a factor of 10 or more (10X ENGINEER LADS)
+
+Diseconomies of Scale
+    As size increases, communication paths among different people increases as a squared function of the number of people
+    Bad news, You can't estimate the effects large variations in sizes from previous projects
+    Good news, most projects in company are of similar size. If they are similar size you can use it to estimate the new project. (Using a simple effort ration, such as lines of code)
+
+
+Data to Collect
+    - Whenever possible count or compute your estimate rather than using expert judgment.
+
+Project Size - LOC
+    - Do you count all code or code that's included in the released software
+    - How do you count code that's reused from previous versions?
+    - How do you count OSS or third party libraries
+    - Do you count blank lines etc
+    
+    It doesn't matter how you answer these questions as long as you are CONSISTENT from project to project.
+
+Size Estimates in LOC
+    Negatives:
+        Simple models such as lines of code per staff month are error prone
+    LOC is a terrible way to measure software size BUT all other ways to measure size are worse. So it is used.
+
+Estimates Based on Past Data
+    Compute estimates of new development tasks based on the actual work to complete past tasks.
+    - Project Data (Collect it once every 2 weeks)
+    - Historical Data
+    - Industry Data (If you don't have historical data you can use data from others)
+
+Estimation by Analogy
+    - Compute a size estimate based on a piece-by-piece count of analogous elements, and the past sizes of those elements.
+
+Function Point Analysis
+    Goal: More precise estimates based on product complexities (known at requirements)
+    - Number unction points from the reqs
+    - Code size from function point
+    - Resources required from code size
+
+Function Points
+    A function point is a size metric of functionality. It relates to the requirements of the software under development.
+
+Function Point Counting
+    - A function point count is computed by adding up inputs and outputs, weighted by complexity multipliers.
+
+Estimating Code Size from Function Points
+    - I think you like multiply the table values for your language to get LOC.
+    - "For Java you multiply with low and high" Not sure what's being multiplied.
+
+Structured Expert Judgement
+    Program Evaluation and Review Technique (PERT) Formula:
+    ExpectedCase = [ BestCase + (4*MostLikelyCase) + WorstCase ] /6
+
+Commercial Estimation Tools
+    Commercial tools embed computationally intensive estimation methods that cannot be done easily by hand or with a calculator.
+    
+Summary of Size Estimation Techniques
+     - It’s best to create Best-Case, Worst-Case, and Expected-Case estimates
+
+Estimating Effort
+    - Informal comparison to past projects
+    - Effort = PastEffort * (Size / PastSize)
+
+    - If you don’t have your own historical data, you can compute a rough estimate of effort based on models of industry-average efforts.
+
+Estimating Schedule
+    ScheduleInMonths = 3.0 x StaffMonths^(1/3)
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+Missed first 5 mins
+
+Behaviour Modelling
+
+A state machine models behaviour that depends on the history of inputs received so far
+
+Guard must be true to continue to the next state.
+
+Trigger event eventually triggers action if guard is met
+
+Remember state machines can show only what the system directly observes or activates. Although you might expect someone to add or remove things from the safe when it's open, we don't put that on the diagram. Because system can't tell
+
+Extended SM:
+
+State diagrams or state transition diagrams.
+
+State machines are like Mealy machines(not finite)
+
+We will use UML state machines to model the observable behaviour of the system. Extended finite state machine provide a global view of the system behaviour.
+
+- Much more expressive than finite state machines, as expressive as Turing machines(programming languages)
+
+- Fancy automata with lots of bells and whistles that are made ti make the machine more compact
+
+State machines in practice
+    - Used to understand complex behaviour
+    - Multiple sequences, cases, conditions
+    - critical software
+
+
+Translate UML to state machine
+    - States represent equivalence classes of input traces
+    - Inputs are events and conditions on <<interface>>
+    - Outputs are actions on <<interface>> phenomena
+    - State machines can have interval variables
+
+You have to think about how the system will behave.
+
+Use semicolon ; to denote 2 actions. Separate actions
+
+States
+    - Key to a good state machine model is in the decomposition of behaviour into states
+    - Does the system have modes of operation, where it is ready to react to different events
+    - Is system idle, waiting for next input?
+    - Is the set of possible futures different?
+    - State will sometimes represent an internal processing of the input
+
+States partition system behaviour into distinct modes of operation
+
+States vs pseudo states
+    - Designator of an initial state is a pseudo-state
+
+Transitions
+    - 3 elements
+    - Event(args) - input event, that triggers the transition
+    - Condition - boolean guard condition, transition cannot fire unless its true
+    - action - simple fast, non interruptible action (variable assignment, output event..)
+
+Inputs
+    - An event is some noteworthy change in the environment
+    - Inputs message from the env
+    - some change to <<Interface>> phenomena
+    - Passage of time
+    
+    - condition is a boolean expression over <<interface>> phenomena
+
+Time event
+    - Is the occurrence of a specific date/time or the passage of time
+    - Absolute time or relative time
+
+    Off <- after(3sec)/turn light off <- On
+
+Condition
+    - Over domain model phenomena
+    - over prams
+    - over state machine variables
+
+Change Events   
+    - Event of a condition becoming true
+    - Event occurs when the condition changes value from false to true
+    - Even does not reoccur unless the value of the conditions becomes false and returns to true
+
+When(x) vs [X]
+    - A change is what you want if you are sitting in a state waiting or a condition to become true
+    - A transition with a guard but no triggering event 
+            - Guard is checked once, transition fires if true, guard is not checked again
+
+Actions
+    - System's response to an event
+    - Action is non-interruptible (atomic)
+
+State actions and activities
+    - Action: instantaneous, non-interruptible, simple
+    - Activity: Takes time, may require computation
+        - It can be associate with a state and can be interrupted by a transition
+    - In uml 2.0 they are "regular activities vs do activities"
+
+Creating a behaviour model
+    - 1) Identify input and output events
+    - 2) Think of a natural partitioning into states
+    - 3) Consider the behaviour of the system for each input at each state
+    
+Stopwatch example:
+Inputs:
+    - on = when[on/off : Button.pressed]
+    - off = when[on/off : Button.pressed]
+    - mode = when[mode : Button.pressed]
+    - but2 = when[but2 : Button.pressed]
+    - but3 = when[but3 : Button.pressed]
+
+States:
+    - Showing nothing (idle/off) 1
+    - Showing 24h   2
+    - Showing 12h   3
+    - Showing Timer 4
+    - Showing LapTimer  5
+    (No state for light)
+
+Actions:
+    - Start/Stop timer
+    - Reset Timer
+    - Get timer time
+
+Check for completeness
+    - For each state X, consider the system's response to each event e:
+    Stopwatch example:
+    - When at off you can only turn on
+    - No other state responds to on
+    - All states can respond to off
+
+State machine vs sequence diagrams
+    - Look at slides
+
+Enrichments
+    - Generally mealy machines in practice result in large models with lots of criss crossing
+    - Hierarchical states
+    - History
+
+If a transition leaves a Hierarchical state, the transition applies to all sub-states
+
+Determinism
+    - s[cond1]and s[cond2] should be mutually exclusive for it to be deterministic
+
+Priority
+    -1) D or C? D occurs first. And then C still happens after and at the end we are at state C
+    -2) B or C? Random, first one that goes into "queue" is executed first
+
+Final state within a hierarchy/sub-machine doesn't mean program is finished. 
+    - We go to E, we get out
+    - What is the initial state? 
+    - A
+    - What state is the machine after the following events,
+    - rx -> B  (D executed first and then we went to B)
+    - qx -> E (X isn't executed since we made it to E)
+
+History
+    - If the system execution has never been in the parent state, then a transition leaving a history pseudo-state indicates what state to enter
+        - If no existing transition than use default initial state
+    - Usually a transition leaving a history state has no guard/trigger/action
+    - Syntactic sugar
+
+What state of exeqution in after sequence of events (diagram in History slide)
+    - y -> A
+    - yq -> E
+    - yrx -> D
+    - yrxz -> B (A->B->E so H remembered B bc it s the last exit)
+    - z -> A (No memory so go to A)
+
+Deep history uses Most recent active, (Diagram is on Deep history slide)
+    - do ytxz
+    - first diagram: (outer diagram) ytxz- > A (D->A->A2->D so last state has A2 for small but A for outer)
+    - second diagram -> A2
+
+Concurrent Regions
+    - 2 things happening at the same time
+    - You can use the dotted line to display better
+
+We didn't finish the slide set, not enough time.

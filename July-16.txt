@@ -1,0 +1,134 @@
+Continuation from last lecture, same set of slides
+
+Concurrent regions
+
+- Some systems have orthogonal behaviours that are best modelled as concurrent state machines
+- Regions within a concurrent state execute in parallel
+- Each has its own thread of control
+
+Stopwatch Example
+- light threads are concurrent
+- Timer threads are concurrent
+
+Concurrency and Final states
+    - Execution of a concurrent state is considered finished when all its regions are in their final states
+    - All 3 needs to be done to go to "Passed"
+    - 
+
+Example with initial
+Initial: E & F
+x -> D & F
+p -> A (Not F as well bc we left the concurrent state)
+r -> E & F (Went back in concurrent state)
+m -> E & J
+s -> f1 & J
+q -> H and then A directly so A is last state (both are finished so we leave the concurrent state)
+
+Termination
+
+Coordination of Regions
+
+Coordination example:
+    - Check album
+    - Concurrent regions react to same events
+
+    - Sometimes concurrent components are not completely independent and would need to coordinate
+    - You might have race conditions so be careful
+
+Event Summary:
+    - Event is instantaneous
+    - 4 Kinds of events
+    - External
+    - Internal
+    - Change Events
+    - Time Events
+
+State actions
+    - Action is uninterruptible
+    - Entry actions
+    - Exit actions
+    - Internal actions: on events
+
+Entry Actions:
+    - Adding entry action to the "trigger/path" which enters to our state is same as having an entry action
+    - entry/x is equivalent to adding action x onto all incoming transitions (incl. self transitions and default arrow_)
+
+Exit actions:
+    - exit/y is equivalent to adding action y onto all outgoing transitions.
+    - These 2 ^ ^ are just ways to simplify the graph.
+
+Internal actions
+    - Internal action y/x is equivalent to a single self transition that ignores entry/exit actions
+    - entry/exit actions are not performed as part of an internal action
+    - These are actions u perform while inside you state
+
+State activities
+    - Activity is a computation of the system that takes time, and can be interrupted
+
+    - Because activities take, time they can  be interrupted by transitions with triggers
+
+Actions vs Activities
+- In actual implementation every task will take time
+- Just bc we consider actions to occur instantaneously in a state machine model does not mean that their implementation will be instantaneous
+- In thinking about whether to make something an action or an activity, consider whether it is interruptible by another input rather than if it takes time
+
+
+Execution order
+
+Creating a behaviour model
+    - Identify input and output events
+    - Think of natural partitioning into states
+    - Consider the behaviour of the system for each input at each state
+    - Revise
+
+Elevator Example:
+    - A passenger who wants to travel from one floor to another higher(lower) floor presses the Up (Down) button at his current floor
+
+    - States: stop, moving Up, moving Down
+    - States for door: open, closed, closing
+
+Good style
+    - Best state machine model is usually the one that is the clearest
+
+Modelling decisions
+    - Choose a natural set of basic states
+    - Avoid flower diagrams
+
+Common problems
+    - Over specification
+        - Don't build an executable model
+    - Under-specification
+        - Do specify a response to every event that is relevant at a state.
+
+Validating Behavior Models
+
+Simulation Tools
+    - We won't be using them
+
+State machines in practice:
+    - Who uses this stuff?
+    - Developers, Gamers to keep track of the modes
+    - Can be used as sophisticated prototypes,
+    - Tools to execute and verify machines
+
+State Machines as Mockups
+    - Example: Electronic voting
+
+Annotating Specifications
+    - We can annotate our reqs/specs models (use cases, state machines) with GUI events)
+
+Navigation Diagrams
+
+Wireframes
+
+Summary
+
+Remember when[x] and [x] are different things
+While writing time during an event
+at(6) -> at(18:00)
+
+after (5 seconds) when (..) can't put when bc that is 2 events, you can only have 1 event per action
+instead do
+after(5 seconds) [(...)] it is now a condition
+you also can't put after() AND [ ].
+

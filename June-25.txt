@@ -5,4 +5,6 @@ Risk is an uncertain factor whose occurrence may result in some loss of satisfac
 - Product related risks
 - Process related risks
 
-....
+Risk exposure = probability(occurrence) * cost(consequences)
+    - Determines if it makes sense to take action to reduce risk or mitigate consequences
+

@@ -1,0 +1,151 @@
+Conflict resolution
+
+Different stakeholders may have conflicting ideas about what the software should do
+
+Conflict Analysis
+    - Data Conflict:
+        - Multiple conflicting understanding of an issue
+        - Lack of necessary information to make proper decisions.
+        - Most data conflicts have data solutions
+        - Ex. Student information system should track attendance
+            - There is no room to record attendance on a transcript
+        - Data soln: Can track attendance and report information to the province without putting information on transcript.
+        * Easy to resolve, so should first check if a conflict is a data conflict
+
+
+    - Interest conflict: Stakeholders have subjective or objectively different goals or interests.
+        - Example: province demands that student info system track attendance for accounting purposes.
+        - Students insist this violates their privacy
+
+        * If the conflict is due to different goals then we may be able to convince two parties that both goals are important - so that we can jointly look for a new solution that satisfies both.
+
+    
+        * For example, record number of students in attendance but not the identities of who attends
+
+
+    - Value conflict: stakeholders express different preferences
+    - Ex. Eng faculty wants to rank students in courses.
+    - Students think that rankings are too fine a distinction between students' performances
+    
+   * Stakeholders may employ different criteria...
+
+
+* Seven-Step decision making model
+* Because the performance of a group involves taking into account the needs and opinion of every group member, being able to come to an equitable decision as efficiently as possible is important
+
+    * 1. Identify the decision
+    * 2. Analyze the issue under discussion
+    * 3. Establish criteria
+    * 4. Brainstorm potential solutions
+    * 5. Evaluate options and select the best one.
+    * 6. Implement the solution
+    * 7. Monitor and evaluate the outcome
+
+Resolution Strategies
+    - Dictator/individual
+    - Committee
+    - Majority vote
+    - Compromise
+    - Invent new resolution
+
+Dictator
+    - Decision by authority
+    - Designated leader makes decision after discussion with the group.
+    - Effectiveness often depends on the listening skills of the leader
+    - Also can be expert member. Decision is made by letting the most expert member decide for the group
+    - Difficulty is deciding who is the expert
+
+Committee
+    - Minority control: Two or more members who constitute less than 50 percent of the group
+
+Compromise
+    - Majority control: Discussions occur until majority decides on a course of action, 51%
+
+Invent new resolution
+    - Consensus, Everyone needs to agree on the same solution.
+    - May take the most time
+    - Everyone has a say
+
+Quality of the decision goes from low to high
+    - Individual, sub committee, majority cote, compromise, Negotiate new resolution
+
+Quality resolutions
+    - More people involved more suggestions and solutions you ll have to choose from.
+    - No matter how good a solver you are you can always benefit from others' opinions
+
+Time to reach decision goes high as quality of the decision
+    - Same ranking as quality of decision
+    - Time needed to resolve a conflict grows non-linearly as the number of people involved grows.
+    - Takes longer to express views, listen to them and decide
+
+
+Decision
+    - Ad: Conflict is resolved quickly
+    - Dis: authority may not exist
+    - One or both parties will lose ground, souring the relationship
+Compromise
+    - Ad: viewpoints of all parties are considers
+    - Dis: time consuming. Depends on parties willingness to compromise, Compromise may not be the best solution
+Novel Solution
+    - Ad: All parties win
+    - Dis: time consuming, may impact other requirements
+
+
+     Decision , Compromise, Novel               (This is supposed to be a table lol)
+
+Data: Not suitable, Only , Not suitable
+Interest: Third, First (to harmonize interest), Second (to find mutually satisfying solution)
+Value: Last(if parties are irreconcilable) , second, first (best)
+
+Data Conflict
+    - compromise, Sharing view points should detect misunderstanding and thereby resolve conflict. Other techniques are time consuming
+
+Interest Conflict
+    - comprise is the best
+
+Value conflict
+    - Hardest conflict
+    - Creative solution is best approach.
+
+Conflict Management:
+    - Individual Strategies
+        - Withdraw: Neither the goal nor the relationship is important to you, withdraw
+        - Force: Task is important but not the relationship
+        - Smooth: Relationship is more important than the task
+        - Compromise: Both of them are important, but there is a lack of time
+        - Confront/invent: Tasks and relationship are equality important. You define conflict as a problem solving situation and resolve through negotiation.
+
+Example:
+    - One team member takes over SE 101 student in team of 9 students who rewrote Lego Mindstroms code himself overnight before presentation
+    (So quality of work is more important then relationships)
+
+
+Map the strategies:
+    First column Goal
+    Second column:  relationship
+
+    Compromise: lose lose (mid importance for both)
+    Withdraw: lose win (low importance for both)
+    Smooth: lose win (high relationship important)
+    Force: win-lose (high goal importance)
+    Confront/invent: win win (high importance for both)
+
+Summary:
+    Data conflicts are caused by:
+        - Lack of info
+        - Different interpretations of data
+    Value conflicts:
+        -  Different criteria for evaluation ideas
+
+    Interest conflict:
+        - Perceived or actual competitive positions/interests
+
+    Conflict Management
+        - Types of conflict
+        - Group resolution strategies
+        - Individual resolution strategies
+        - Importance of Goal vs Relationship
+
+
+
+* MEANS it's a secret slide
