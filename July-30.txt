@@ -1,0 +1,37 @@
+Review
+    - Know all the points in these slides.
+    - "Prioritization techniques", know each of the techniques
+
+
+Business Requirements
+
+User Requirements
+    - "I am a ..."
+    - These cards are saved in the backlog
+    - Prioritize
+    - User stories are used for better understanding existing requirements and coming up with new ones
+    - Use case diagram: Understand how the user interacts with the system and how the system interacts with external entities
+    - You should be able to write use case and context diagrams
+
+Elicitation
+    - Identifying early requirements: Documentation and Brainstorming could be used
+        - High detailed requirements: User interviews
+    - Data flow model: can give us data related requirements that we might have missed
+    - Data flow model: how data flows internally. Context Diagram is the data through whole system
+    - You should know how to write these models/diagrams
+    - Identify the differences for deciding what model to use when
+
+Requirement Analysis
+    - Strategies: Dictatorship...
+    - No calculator in the exam so performing these "Applications" probably won't be asked but gotta know the steps
+
+Requirements and Specifications
+    - Reqs vs Specs
+    - If you are writing a spec you shouldn't say "user"
+    - Write in terms of what )interface phenomena/system sees, it probably sees a "user account" instead of user
+    - Possible questions: You are given a system and you have to write some specifications
+
+Modelling and Documentation
+    - Is it a class or an attribute
+    - Temporal Logic: know the symbols
+ 

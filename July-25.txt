@@ -1,0 +1,69 @@
+Estimation slides continued
+
+Estimating Schedule
+    - 2 schedule Formulas, for medium-to-large and for small projects
+    - Select a project where it's in the same range
+
+Adjustment Factors
+    - Use this to understand the influence of these characteristics on the project
+    - Each factor/characteristic has a negative and positive impact
+
+Cocomo Adjustment Factors (cocomo isn't a typo)
+    - Do not employ adjustment factors. They add more uncertainty to the many uncertainties already there
+    - Rather it is interesting to note the different factors that affect estimations and their impact on estimations. Assume other estimation techniques will account for many of them
+    - Try to mitigate factors that have a negative effect
+
+Best Practice
+    - Decompose the estimation task into multiple subtasks and combine the results
+        - some estimation errors will cancel each other out
+    - Use multiple estimation techniques and compare the results
+    - Define the estimation procedure in advance
+    - 
+
+Decomposition
+    - How small should estimated pieces be?
+    - In the beginning they'll be large....
+
+Multiple Estimation Techniques
+    - No single technique is perfect so using multiple approaches is useful in many contexts.
+    - Complicated software producers use at least 3 different approaches. 
+    - Convergence among the techniques will tell you, estimate is accurate
+    
+Recombining Piecewise Estimates
+    - You want to tell them your confidence interval instead of Best case/worst case
+
+Confidence Interval
+    - Combine the standard deviations of the piecemeal estimates by summing the variances of the estimates and taking the square root.
+
+Percentage Confident
+    - Can use a table of standard deviations to compute a percentage likelihood. (2nd CI slide)
+
+Precision
+    - Table of divisors depending on your Confidence Interval
+
+Significant Digits
+
+Project Control
+    - Once we make an estimate, and make a commitment to deliver functionality and quality by a particular date, then we control the project to meet the target.
+
+Schedule Compression
+    - Way of controlling the project
+    - 1.0 = Nominal effort and nominal schedule
+    - There is an impossible zone and you can't beat it
+    - If 8 people write a program in 10 months, can 80 write in one month
+    - So there is some point where it doesn't make sense
+    - This is what this impossible zone means
+    - Finding the limits of less-extreme schedule compression is a more subtle problem. But all researchers have concluded there is an impossible zone
+    - Shortening the nominal schedule increases overall effort
+    - Shortening nominal schedule will increase total development effort because:
+        - Larger teams require more coordination and management overhead
+        - Larger teams introduce more communication paths which introduce more chances to miscommunicate which can introduce more errors
+
+    - Extending the schedule beyond the nominal schedule usually reduces total effort, if you reduce the team size
+    - Growing team size can have a negative effect on the effort!!
+    - GRAPH: After Team size is larger than 5-6 increasing team size results in exponentially more effort
+
+Schedule and Staffing Constraints
+
+Summary
+
